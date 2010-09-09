@@ -21,7 +21,7 @@
 
 // Function to load class files as needed.
 function __autoload($class_name) {
-    require_once ('classes/class.'.strtolower($class_name).'.php');
+    require_once ('classes/'.strtolower($class_name).'.class.php');
 }
 
 // Variable to hold details of a child carre center.
